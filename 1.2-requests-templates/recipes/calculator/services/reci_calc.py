@@ -29,7 +29,6 @@ def calculate_food(food,servings=1):
     for key, value in get_recipe(food).items():
         recipe[key] = value * int(servings)
     context = dict.fromkeys(['recipe'], recipe)
-    print(context)
     return context
     
 
